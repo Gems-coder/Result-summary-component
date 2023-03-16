@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Hanken Grotesk'; /*a name to be used later*/
+    src: url('./results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf'); /*URL to font*/
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk";
+    padding: 0;
+    margin: 0;
+}
+.body{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    margin-top: 200px;
+    border-radius: 30px;
+    box-shadow: 5px 10px 18px hsl(221, 100%, 96%);
+}
+
+.purple{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+    padding: 20px;
+}
+
+h1, .purple p{
+    color: hsl(217, 7%, 78%);
+    text-align: center;
+    font-family: "Hanken Grotesk";
+    padding: 20px;
+}
+
+
+.circle{
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    
+}
+.circle div{
+    margin: auto; 
+}
+.big-size{
+    font-size: 70px; 
+    font-weight: 800;
+    text-align: center;
+    color: white;
+
+}
+.small-size{
+    font-size: 15px;
+    color: rgb(192, 180, 180);
+    text-align: center;
+}
+
+.purple h2{
+    padding-top: 25px;
+    color: white;
+    text-align: center;
+} 
+
+
+
+
+.white{
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+}
+
+.white h2, .white div{
+    color: hsl(224, 30%, 27%) ;
+    font-weight: 700;
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    border-radius: 10px;
+    margin-top: 15px ;
+    padding: 15px;
+}
+
+
+.flex1{
+    display: flex;
+    gap: 8px;
+}
+
+.bg1{
+    background-color: hsla(0, 100%, 67%, 0.15);  
+    margin-top: 15px;
+}
+.bg2{
+    background-color: hsla(39, 100%, 56%, 0.15);  
+}  
+.bg3{
+    background-color: hsla(166, 100%, 37%, 0.15);
+}
+.bg4{
+    background-color: hsla(234, 85%, 45%, 0.15);
+}
+
+.Light-red{
+   color: hsl(0, 100%, 67%) ; 
+}
+.Orangey-yellow{
+    color: hsl(39, 100%, 56%);
+}
+.Green-teal{
+    color: hsl(166, 100%, 37%);
+}
+.Cobalt-blue{
+    color: hsl(234, 85%, 45%);
+}
+button{
+    margin: 15px  15px 0 15px ; 
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    
+}
+
+.text-muted{
+    color: #888888;
+}
+
+#info{
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+    }
+    .purple{
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+    }
+    .white{
+        width: 100%;
+    }
+}
